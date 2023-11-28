@@ -26,7 +26,9 @@ No installation is required to view the website in a web browser. The website is
 ## Usage
 Open the website and click the genrate password button. This will present you with a series of prompts which require valid inputs such as the length of the password (must be between 8 and 128) and the character type you wish to include in your password (must select at least one). Once this is done a random password will be generated given the user choices and displayed on the page.
 
+The screenshot below shows how the application looks with a password already generated!
 
+![Alt text](/images/password-generator-screenshot.png)
 
 ## License
 
