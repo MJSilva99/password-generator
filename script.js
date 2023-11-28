@@ -97,7 +97,23 @@ function getPasswordOptions() {
     alert("Please enter a valid length between 8 and 128.");
     return getPasswordOptions();
   }
+  var isLowercase = confirm("Do you wish to include lowercase characters?");
+  var isUppercase = confirm("Do you wish to include uppercase characters?");
+  var isNumeric = confirm("Do you wish to include numeric characters?");
+  var isSpecial = confirm("Do you wish to include special characters?");
 
+  if (!(isLowercase || isUppercase || isNumeric || isSpecial)) {
+    alert("You must select at least one character type.");
+    
+    return getPasswordOptions();
+  }
+  return {
+    length,
+    isLowercase,
+    isUppercase,
+    isNumeric,
+    isSpecial
+  };
 }
 
 // Function for getting a random element from an array
